@@ -1,28 +1,30 @@
-# QNg-uickstart
+# Ng-quickstart
+
+This is a quickstart Angular project containing my preferred configurations and tools for frontend development, including linting, git hooks, ci/cd and testing frameworks, to be used as a launchpad for different Angular applications.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Angular, NodeJS, Typescript and NPM/YARN
 
-## Code scaffolding
+As an Angular project, this project is based on NodeJS/Typescript, and uses Yarn as a package manager.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Git and commit style guides
 
-## Build
+This project uses conventional commits and commitzen to generate consistent commit messages and husky commit-msg hook and commitlint to enforce them.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Code style and linting
 
-## Running unit tests
+This project leverages ES-Lint and Prettier to check and format code into the specified guidelines, and also uses lint-staged and a husky pre-commit hook to enforce linting rules.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Testing
 
-## Running end-to-end tests
+This project also tries to approach software development from a Test-Driven perspective. As such, automated unit, integration and e2e testing is incorporated into the development workflow from the very beginning. Husky pre-push hooks and github CI actions run unit and e2e testing respectively to ensure that all code integrated into the develop and main branches is functioning and covered by automated tests.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Unit testing
 
-## Further help
+The default Angular configuration is Karma running Jasmine tests. A modified karma-ci config file is used for test runs into the git workflow
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Integration and e2e testing
 
+A cypress github workflow script is run on all pull-requests into the main and develop branches.
