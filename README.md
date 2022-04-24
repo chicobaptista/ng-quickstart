@@ -1,28 +1,78 @@
-# QNg-uickstart
+# Ng-quickstart
+
+![](https://img.shields.io/github/checks-status/chicobaptista/ng-quickstart/develop)
+![](https://img.shields.io/github/last-commit/chicobaptista/ng-quickstart?logo=github)
+![](https://img.shields.io/github/license/chicobaptista/ng-quickstart)
+
+This is a quickstart Angular project containing my preferred configurations and tools for frontend development, including linting, git hooks, ci/cd and testing frameworks, to be used as a launchpad for different Angular applications.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Built with
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ - Main frameworks and languages
+    - NodeJS
+    - Angular
+    - Typescript
+ - Git
+    - Husky
+    - Conventional Commits
+    - Commitzen
+ - Linting and Code style
+    - Prettier
+    - Eslint
+ - Testing
+    - Karma
+    - Jasmine
+    - Cypress
+ - CI/CD
+    - Github actions
 
-## Build
+## Getting started
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ - Install dependencies with `yarn`
+ - Run the development server with `ng serve`
 
-## Running unit tests
+### Building the project
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng build` to build the project. The generated artifacts will be in the `dist/` directory.
 
-## Running end-to-end tests
+----
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Angular, NodeJS, Typescript and NPM/YARN
 
-## Further help
+As an Angular project, this project is based on NodeJS/Typescript, and uses Yarn as a package manager.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Git and commit style guides
 
+This project uses conventional commits and commitzen to generate consistent commit messages and husky commit-msg hook and commitlint to enforce them.
+
+## Code style and linting
+
+This project leverages ES-Lint and Prettier to check and format code into the specified guidelines, and also uses lint-staged and a husky pre-commit hook to enforce linting rules.
+
+## Testing
+
+This project also tries to approach software development from a Test-Driven perspective. As such, automated unit, integration and e2e testing is incorporated into the development workflow from the very beginning. Husky pre-push hooks and github CI actions run unit and e2e testing respectively to ensure that all code integrated into the develop and main branches is functioning and covered by automated tests.
+
+### Unit testing
+
+The default Angular configuration is Karma running Jasmine tests. A modified karma-ci config file is used for test runs into the git workflow
+
+### Integration and e2e testing
+
+A cypress github workflow script is run on all pull-requests into the main and develop branches.
+
+### Documentation
+
+This project uses Compodoc to generate documentation automatically from the source code
+
+----
+
+## License
+
+This project is under the MIT License
+
+## Contact

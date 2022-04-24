@@ -41,6 +41,7 @@ cypress/screenshots
 cypress/videos
 cypress/logs
 
+
 # System files
 .DS_Store
 Thumbs.db
