@@ -1,9 +1,10 @@
 name: Cypress headless
 
-on: pull_request:
-  branches:
-    - main
-    - develop
+on: 
+  pull_request:
+    branches:
+      - main
+      - develop
 
 jobs:
   chrome-headless:
@@ -19,4 +20,3 @@ jobs:
           start: npm start
           browser: chrome
           headless: true
-          record: true
