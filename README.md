@@ -1,5 +1,9 @@
 # Ng-quickstart
 
+![](https://img.shields.io/github/checks-status/chicobaptista/ng-quickstart/develop)
+![](https://img.shields.io/github/last-commit/chicobaptista/ng-quickstart?logo=github)
+![](https://img.shields.io/github/license/chicobaptista/ng-quickstart)
+
 This is a quickstart Angular project containing my preferred configurations and tools for frontend development, including linting, git hooks, ci/cd and testing frameworks, to be used as a launchpad for different Angular applications.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
