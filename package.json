@@ -6,7 +6,7 @@
     "prepare": "husky install",
     "cz": "git-cz",
     "ng": "ng",
-    "doc": "npx compodoc -p tsconfig.doc.json",
+    "doc": "npx compodoc -p tsconfig.doc.json -d docs/",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
