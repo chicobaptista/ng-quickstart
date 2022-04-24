@@ -5,6 +5,38 @@ This is a quickstart Angular project containing my preferred configurations and 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
 
 
+
+## Built with
+
+ - Main frameworks and languages
+    - NodeJS
+    - Angular
+    - Typescript
+ - Git
+    - Husky
+    - Conventional Commits
+    - Commitzen
+ - Linting and Code style
+    - Prettier
+    - Eslint
+ - Testing
+    - Karma
+    - Jasmine
+    - Cypress
+ - CI/CD
+    - Github actions
+
+## Getting started
+
+ - Install dependencies with `yarn`
+ - Run the development server with `ng serve`
+
+### Building the project
+
+Run `ng build` to build the project. The generated artifacts will be in the `dist/` directory.
+
+----
+
 ## Angular, NodeJS, Typescript and NPM/YARN
 
 As an Angular project, this project is based on NodeJS/Typescript, and uses Yarn as a package manager.
@@ -28,3 +60,11 @@ The default Angular configuration is Karma running Jasmine tests. A modified kar
 ### Integration and e2e testing
 
 A cypress github workflow script is run on all pull-requests into the main and develop branches.
+
+----
+
+## License
+
+This project is under the MIT License
+
+## Contact
