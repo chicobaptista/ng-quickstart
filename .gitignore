@@ -40,7 +40,7 @@ testem.log
 cypress/screenshots
 cypress/videos
 cypress/logs
-documentation/
+
 
 # System files
 .DS_Store
