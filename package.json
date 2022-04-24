@@ -6,6 +6,7 @@
     "prepare": "husky install",
     "cz": "git-cz",
     "ng": "ng",
+    "doc": "npx compodoc -p tsconfig.doc.json",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
@@ -15,7 +16,10 @@
     "format": "npx prettier 'src/**/*.{js,jsx,ts,tsx,html,css,scss}' --write",
     "e2e": "ng e2e",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:run": "cypress run",
+    "compodoc:build": "compodoc -p tsconfig.doc.json",
+    "compodoc:build-and-serve": "compodoc -p tsconfig.doc.json -s",
+    "compodoc:serve": "compodoc -s"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +31,7 @@
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
+    "@compodoc/compodoc": "1.1.19",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "yarn": "^1.22.18",
@@ -49,6 +54,7 @@
     "@typescript-eslint/eslint-plugin": "5.17.0",
     "@typescript-eslint/parser": "5.17.0",
     "commitizen": "^4.2.4",
+    "cypress": "latest",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.12.0",
     "eslint-config-prettier": "^8.5.0",
@@ -62,8 +68,7 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "lint-staged": ">=10",
     "prettier": "^2.6.2",
-    "typescript": "~4.6.2",
-    "cypress": "latest"
+    "typescript": "~4.6.2"
   },
   "config": {
     "commitizen": {

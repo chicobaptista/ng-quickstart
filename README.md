@@ -65,6 +65,10 @@ The default Angular configuration is Karma running Jasmine tests. A modified kar
 
 A cypress github workflow script is run on all pull-requests into the main and develop branches.
 
+### Documentation
+
+This project uses Compodoc to generate documentation automatically from the source code
+
 ----
 
 ## License
